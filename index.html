@@ -9,7 +9,11 @@
   <meta name="author" content="Gingerhot">
 
   
-  <meta name="description" content="Redis 的安装超级简单，可以说对于任何级别的 Linux 用户都没有障碍。 只需简单几步即可搞定： *下载源码。 wget http://redis.googlecode.com/files/redis-2.6.14.tar.gz *解压编译。 $ tar vzxf redis-2.6.14. &hellip;">
+  <meta name="description" content="Redis 的安装超级简单，可以说对于任何级别的 Linux 用户都没有障碍。 只需简单几步即可搞定： 下载源码。 1
+wget http://redis.googlecode.com/files/redis-2.6.14.tar.gz 解压编译。 1
+2
+3
+$ tar vzxf redis-2 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -98,27 +102,53 @@
 
 <p>只需简单几步即可搞定：</p>
 
-<p>*下载源码。</p>
+<ul>
+<li>下载源码。</li>
+</ul>
 
-<p>wget <a href="http://redis.googlecode.com/files/redis-2.6.14.tar.gz">http://redis.googlecode.com/files/redis-2.6.14.tar.gz</a></p>
 
-<p>*解压编译。</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget http://redis.googlecode.com/files/redis-2.6.14.tar.gz</span></code></pre></td></tr></table></div></figure>
 
-<p>$ tar vzxf redis-2.6.14.tar.gz
-$ cd redis-2.6.14
-$ make</p>
 
-<p>*然后直接启动编译好的二进制 server 端：</p>
+<ul>
+<li>解压编译。</li>
+</ul>
 
-<p>$ src/redis-server</p>
 
-<p>*这时打开客户端即可尝试一下 Redis 的语法了：</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ tar vzxf redis-2.6.14.tar.gz
+</span><span class='line'>$ cd redis-2.6.14
+</span><span class='line'>$ make</span></code></pre></td></tr></table></div></figure>
 
-<p>$ src/redis-cli
-redis> set foo bar
-OK
-redis> get foo
-&ldquo;bar&rdquo;</p>
+
+<ul>
+<li>然后直接启动编译好的二进制 server 端：</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ src/redis-server</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>这时打开客户端即可尝试一下 Redis 的语法了：</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ src/redis-cli
+</span><span class='line'>redis&gt; set foo bar
+</span><span class='line'>OK
+</span><span class='line'>redis&gt; get foo
+</span><span class='line'>"bar"</span></code></pre></td></tr></table></div></figure>
+
 
 <p>原文：<a href="http://redis.io/download">http://redis.io/download</a></p>
 </div>

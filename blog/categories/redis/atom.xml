@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Redis | My Redis Learning Blog]]></title>
   <link href="http://redispw.github.io/blog/categories/redis/atom.xml" rel="self"/>
   <link href="http://redispw.github.io/"/>
-  <updated>2013-07-02T00:18:10+08:00</updated>
+  <updated>2013-07-02T00:26:47+08:00</updated>
   <id>http://redispw.github.io/</id>
   <author>
     <name><![CDATA[Gingerhot]]></name>
@@ -22,27 +22,47 @@
 
 <p>只需简单几步即可搞定：</p>
 
-<p>*下载源码。</p>
+<ul>
+<li>下载源码。</li>
+</ul>
 
-<p>wget <a href="http://redis.googlecode.com/files/redis-2.6.14.tar.gz">http://redis.googlecode.com/files/redis-2.6.14.tar.gz</a></p>
 
-<p>*解压编译。</p>
+<p><code>
+wget http://redis.googlecode.com/files/redis-2.6.14.tar.gz
+</code></p>
 
-<p>$ tar vzxf redis-2.6.14.tar.gz
+<ul>
+<li>解压编译。</li>
+</ul>
+
+
+<p><code>
+$ tar vzxf redis-2.6.14.tar.gz
 $ cd redis-2.6.14
-$ make</p>
+$ make
+</code></p>
 
-<p>*然后直接启动编译好的二进制 server 端：</p>
+<ul>
+<li>然后直接启动编译好的二进制 server 端：</li>
+</ul>
 
-<p>$ src/redis-server</p>
 
-<p>*这时打开客户端即可尝试一下 Redis 的语法了：</p>
+<p><code>
+$ src/redis-server
+</code></p>
 
-<p>$ src/redis-cli
-redis> set foo bar
+<ul>
+<li>这时打开客户端即可尝试一下 Redis 的语法了：</li>
+</ul>
+
+
+<p><code>
+$ src/redis-cli
+redis&gt; set foo bar
 OK
-redis> get foo
-&ldquo;bar&rdquo;</p>
+redis&gt; get foo
+"bar"
+</code></p>
 
 <p>原文：<a href="http://redis.io/download">http://redis.io/download</a></p>
 ]]></content>
