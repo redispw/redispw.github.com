@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://redispw.github.io/sitemap.xml 
